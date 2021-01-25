@@ -67,12 +67,14 @@ bernie_plot <- ggplot(
       y = `Life expectancy`,
       label = Country
     ),
-    seed = 1234
+    seed = 1234,
+    nudge_y = -.75,
+    nudge_x = -200
   ) + 
   xlab(element_blank()) +
   ylab(element_blank()) + 
   labs(
-    title = "Life expectancy and health expenditure (per capita)",
+    title = "Life expectancy versus health expenditure (per capita)",
     caption = glue::glue(
       "Code: github.com/tgerke/life-expectancy-cost<br>",
       "Twitter: @travisgerke"
